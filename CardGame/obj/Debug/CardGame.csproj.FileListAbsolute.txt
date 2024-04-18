@@ -1,0 +1,52 @@
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\CardGame.exe.config
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\CardGame.exe
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\CardGame.pdb
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.csproj.AssemblyReference.cache
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.Properties.Resources.resources
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.csproj.GenerateResource.cache
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.exe
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.pdb
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\aa\CardGame.resources.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\es-419\CardGame.resources.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\aa\CardGame.resources.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\es-419\CardGame.resources.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.mainForm.resources
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.mainForm.aa.resources
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.mainForm.es-419.resources
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\WinFormAnimation.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\obj\Debug\CardGame.csproj.CopyComplete
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\Newtonsoft.Json.Schema.dll
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Arcanist\Desktop\Modelo owo\Orientada a objetos\CardGame\CardGame\bin\Debug\Newtonsoft.Json.Schema.xml
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.csproj.AssemblyReference.cache
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.mainForm.resources
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.Properties.Resources.resources
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.mainForm.aa.resources
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.mainForm.es-419.resources
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.csproj.GenerateResource.cache
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.exe
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.pdb
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\CardGame.exe.config
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\CardGame.exe
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\CardGame.pdb
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\aa\CardGame.resources.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\es-419\CardGame.resources.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\Newtonsoft.Json.Schema.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\WinFormAnimation.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\Newtonsoft.Json.Schema.xml
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\aa\CardGame.resources.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\es-419\CardGame.resources.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.csproj.CopyComplete
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.Form2.resources
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\Interop.WMPLib.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\Interop.WMPLib.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\JOSE\source\repos\copy the spire\CardGame\CardGame\obj\Debug\CardGame.csproj.ResolveComReference.cache

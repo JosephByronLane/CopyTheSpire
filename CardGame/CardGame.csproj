@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DC08409-EEB6-4116-BEB2-2B430ABF39D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CardGame</RootNamespace>
+    <AssemblyName>CardGame</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Schema, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.14\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\IActor.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.aa.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.es-419.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Scene1.fbx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cartas.json" />
+    <None Include="Resources\pj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cultist-pretty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Armaments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barricade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleTrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berserk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BloodforBlood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bloodletting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bludgeon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySlam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brutality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BurningPact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carnage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cleave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clothesline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Combust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corruption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DarkEmbrace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Defend_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DemonForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleTap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dropkick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DualWield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evolve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exhume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FeelNoPain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FiendFire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireBreathing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlameBarrier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostlyArmor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Havoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Headbutt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeavyBlade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hemokinesis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Immolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impervious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfernalBlade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inflame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intimidate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IronWave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juggernaut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimitBreak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metallicize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Offering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerfectedStrike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PommelStrike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerThrough.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pummel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rampage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecklessCharge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rupture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearingBlow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecondWind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeeingRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sentinel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeverSoul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shockwave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShrugItOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpotWeakness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strike_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwordBoomerang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thunderclap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrueGrit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwinStrike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uppercut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warcry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whirlwind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WildStrike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\endTurnButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\deckButton\base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\deckButton\shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\red\merged.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\panelHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\panelGoldBag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\deck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\floor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\countCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\countCircle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\topPanel\healthbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\combat\block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\buff1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\debuff1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsters\finishedenemies\Enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsters\finishedenemies\Enemy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsters\finishedenemies\Enemy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsters\finishedenemies\Enemy4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsters\finishedenemies\Enemy5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\victory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characters\ironclad\corpse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menutexstbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title\cloud1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title\cloud2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title\cloud3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadingscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\music\STS_MenuTheme_NewMix_v1.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\intent\attack\attack_intent_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vfx\combat\slash_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\map\mapCompleteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\map\mapbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui\map\circle5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapuiat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapuiat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapuiat3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapuiat4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapuiat5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\music\STS_MenuTheme_NewMix_v1 - Copy.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\mmmusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\lv1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\lv2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\lv3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\de4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\de3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\de2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\de1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\bossv4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\bossv3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\bossv2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\bossv1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\lv5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavmusic\lv4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\atk1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\atk2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\bvst.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\def1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\def2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\def3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\dst.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\enatk_knife.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\enatk_scimitar.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\enatk_sword.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\enatk_sythe.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\enatk1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\pt1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\pt2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\pt3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\pt4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\uiclick1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\uiclick2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio\wavsound\windam1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
