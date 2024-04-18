@@ -17,7 +17,7 @@ Well dont worry, we have you covered! <br>
 - yeah what do you expect i literally called it shitty slay the spire
 - so  shitty  you might aswell call it an asset flip
 - open source so you can change things to your liking, if you dare.
-- its so slow my fake 64-core threadripper and 3090 can barely play it at 20 fps
+- its so slow my fake 64-core threadripper and 3090 & 4090 can barely play it at 20 fps
 - its code is so spaguetti you can just tell it was made by an italian  
 - doesnt support anything over 120hz monitors
   - it literally doesnt have animations so it prob doesnt even look great on a 60hz monitor
@@ -32,7 +32,7 @@ well we kinda wanna pass our programming class so....
   i also kinda really like slay the spire and when given the choice to make a pseudo game i wanted it to be StS  
   
 # how to install
-1. first clone repo using git clone https://github.com/ChaosWizard99/CardGame.git
+1. first clone repo using git clone https://github.com/JosephByronLane/CopyTheSpire.git
 2. go into bin\debug\
 3. play CardGame.exe
 4. enjoy your shitty WIP game
